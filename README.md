@@ -26,6 +26,7 @@ raspi notebook
 2. 树莓派第一次启动 (Start)
   1). 修改第一次开机使用的IP地址 
   烧写好系统镜像到SD卡后，不弹出SD卡，修改SD卡根目录下的cmdline.txt, 在文件最前面增加ip=192.168.88.100 （Note：IP地址为你的电脑所能访问的地址，第一次连接通常采用有线网络连接）
+
   2). 支持SSH登录
   支持SSH登录，只需要新建空文件ssh到SD卡（boot分区）的根目录下，启动完成后，采用第一步的IP即可登录到树莓派
   
@@ -46,7 +47,7 @@ raspi notebook
  
  修改后如下：
  #deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
- # Uncomment line below then 'apt-get update' to enable 'apt-get source'
+ # #Uncomment line below then 'apt-get update' to enable 'apt-get source'
  #deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
 
  deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi

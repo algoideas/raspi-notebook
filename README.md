@@ -3,24 +3,31 @@ raspi notebook
 
 1. 树莓派准备工作（Prepare）：
   1). System Image
-  官方系统下载：https://www.raspberrypi.org/downloads/raspbian/
+  官方系统下载：
+  
+  https://www.raspberrypi.org/downloads/raspbian/
   
   目前最新版本，推荐使用种子下载，如：
+  
   https://downloads.raspberrypi.org/raspbian_full/images/raspbian_full-2019-07-12/2019-07-10-raspbian-buster-full.zip.torrent
  
   百度网盘分享：
+  
   链接: https://pan.baidu.com/s/1K2vxHA1DJhQUFe2c42Oruw 提取码: ybgp
 
   2). SD Card Format
   Note ： 推荐SD卡格式化为FAT32  
   a. guiformat
+  
   https://www.downloadbound.com/db/guiformat.exe/
 
   b. rufus
+  
   http://rufus.ie/
 
   3). Write System Image
   a. Win32DiskImager
+  
   https://sourceforge.net/projects/win32diskimager/files/
  
 2. 树莓派第一次启动 (Start)
@@ -46,8 +53,9 @@ raspi notebook
  sudo vim /etc/apt/sources.list
  
  修改后如下：
+ 
  #deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
- # #Uncomment line below then 'apt-get update' to enable 'apt-get source'
+ #Uncomment line below then 'apt-get update' to enable 'apt-get source'
  #deb-src http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi
 
  deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
@@ -61,6 +69,7 @@ raspi notebook
  
 4 . 树莓派一些工具推荐 (Recommend)
   1). raspap-webgui - 树莓派WIFI(支持AP和STA)管理工具
+  
    https://github.com/billz/raspap-webgui
    
 
